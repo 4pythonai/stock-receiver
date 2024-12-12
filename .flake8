@@ -1,0 +1,68 @@
+[flake8]
+
+max-args=5
+
+max-line-length = 120
+# 最大复杂度
+max-complexity = 10
+
+# 忽略某些错误
+; disable=C0303,C0111,C0411,C0116,R0903,C0301,C0103,E0602,E0603,R0902,R0913
+
+; ignore = E203, E501, E266, W503
+
+extend-ignore =
+    # W293: Use TODO(NAME)
+    W292,
+    W293,
+    # E501: Use TODO(NAME)
+    E501,
+    # E721: Use TODO(NAME)
+    E721,
+    # E203: whitespace before ':'
+    E203,
+    E302,
+    # H202: assertRaises Exception too broad
+    H202,
+    # H233: Python 3.x incompatible use of print operator
+    H233,
+    # H301: one import per line
+    H301,
+    # H306: imports not in alphabetical order (time, os)
+    H306,
+    # H401: docstring should not start with a space
+    H401,
+    # H403: multi line docstrings should end on a new line
+    H403,
+    # H404: multi line docstring should start without a leading new line
+    H404,
+    # H405: multi line docstring summary not separated with an empty line
+    H405,
+    # H501: Do not use self.__dict__ for string formatting
+    H501,
+    E305
+
+
+exclude =
+    .git,
+    __pycache__,
+    build,
+    dist,
+    *.egg-info,
+    venv,
+    .venv
+
+# 每行最大变量个数
+max-local-variables = 15
+
+# 函数最大参数个数
+max-arguments = 10
+
+# 允许的文件扩展名
+filename = *.py
+
+# 统计信息
+statistics = True
+
+# 输出格式
+format = %(path)s:%(row)d:%(col)d: %(code)s %(text)s

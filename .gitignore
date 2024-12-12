@@ -1,0 +1,11 @@
+*.py[co]
+__pycache__
+*-checkpoint.ipynb
+*.vscode
+*.log
+*.db
+.env
+config.yaml
+OpenConfig.yaml
+gotify_push.py
+cos_config.yaml
